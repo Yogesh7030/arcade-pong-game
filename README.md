@@ -43,3 +43,9 @@ Only the 'main.py' file needs to be run to play the game.
   - Uses built-in 'turtle' and 'random' modules
 
 To run the game: python main.py
+
+## Acknowledgments
+
+This project was inspired by the ["100 Days of Code – The Complete Python Pro Bootcamp"](https://www.udemy.com/course/100-days-of-code/) by Dr. Angela Yu on Udemy.
+
+Portions of the game logic and structure were adapted and expanded based on the exercises from that course.
