@@ -18,8 +18,8 @@ This is a simple two-player Pong-style arcade game built using Python's 'turtle'
   - Move Up: Arrow Up
   - Move Down: Arrow Down
 - **Player 2 (Left Paddle)**
-  - Move Up: W
-  - Move Down: S
+  - Move Up: 'w'
+  - Move Down: 's'
 
 > You can change the control keys in the 'main.py' file if needed.
 
@@ -28,9 +28,9 @@ This is a simple two-player Pong-style arcade game built using Python's 'turtle'
 ## Project Structure
 
 - 'main.py' – Entry point to run the game
-- 'Arcade_participants.py' – Sets up the game screen and players
+- 'arcade_participants.py' – Sets up the game screen and players
 - 'ball.py' – Manages the ball's movement and collisions
-- 'Scoreboard.py' – Displays and updates the player scores
+- 'scoreboard.py' – Displays and updates the player scores
 
 Only the 'main.py' file needs to be run to play the game.
 
