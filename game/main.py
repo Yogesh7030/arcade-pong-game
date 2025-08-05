@@ -1,13 +1,13 @@
 import time
 from turtle import Screen
-from Arcade_participants import Arcade
-from Scoreboard import Scoreboard
+from arcade_participants import Arcade
+from scoreboard import Scoreboard
 from ball import Ball
 
 Controller1_key_up = "Up"
 Controller1_key_down = "Down"
-Controller2_key_up = "W"
-Controller2_key_down = "S"
+Controller2_key_up = "w"
+Controller2_key_down = "s"
 Number_of_points = 10
 
 STARTING_POSITIONS_PARTICIPANT1 = (350, 0)
@@ -42,7 +42,7 @@ while game_is_on:
     if ball.ycor() > 280 or ball.ycor() < -280:
         ball.bounce()
 
-    if ball.distance(arcade) < 60 and ball.xcor() > 320 or ball.distance(arcade2) < 60 and ball.xcor() > -320:
+    if ball.distance(arcade) < 60 and ball.xcor() > 320 or ball.distance(arcade2) < 60 and ball.xcor() < -320:
         ball.bounce_back()
 
     if ball.xcor() > 370:
@@ -57,33 +57,5 @@ while game_is_on:
 
     if scoreboard.l_score == Number_of_points or scoreboard.r_score == Number_of_points:
         game_is_on = False
-
-
-
-
-
-
-
-# while game_is_on:
-
-#
-    # arcade2.move()
-    # arcade.move()
-    # arcade.set_heading()
-    # arcade2.set_heading()
-
-# turtle = Turtle("square")
-# turtle.shapesize(3,1)
-# turtle.penup()
-# turtle.color("White")
-# turtle.goto(-280, 0)
-
-# while game_is_on:
-
-    # turtle.setheading(90)
-    # turtle.forward(20)
-
-
-
 
 my_screen.exitonclick()
